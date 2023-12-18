@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Department</h1>
+        <table border="1px solid">
+            <tr>
+                <th>Dept no</th>
+                <th>Dept name</th>
+                <th>Location</th>
+            </tr>
+
+            {% for do in dept %}
+            <tr>
+                <td>{{ do.deptno }}</td>
+                <td>{{ do.dname }}</td>
+                <td>{{ do.loc }}</td>
+            </tr>
+            {% endfor %}
+
+            {% for do in QLD %}
+            <tr>
+                <td>{{ do.deptno }}</td>
+                <td>{{ do.dname }}</td>
+                <td>{{ do.loc }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
